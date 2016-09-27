@@ -1,0 +1,2 @@
+# Daisys_Blog
+The project you are about to build is based on the lessons we have learned. You will build a blog platform for a client who is just getting started in the business. They have very little idea as to what they want, but you… the confident web-designer… are understanding and are willing to work patiently with your client. However, the clock is ticking and you do not have time to waste, as you have other deadlines for other projects. 

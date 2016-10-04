@@ -1,0 +1,41 @@
+body{
+    background-color: lavender;
+}
+h1{
+    color: white;
+    font-weight: 400;
+    font-family: "Droid Sans";
+    alignment: center;
+    font-size: 60px;
+}
+input, textarea {
+    width: 50px;
+    height: 50%;
+}
+li{
+    text-underline: none;
+}
+a{
+
+    transition: color 2s;
+}
+a:link, a:visited {
+
+    background-color: lightpink;
+    opacity: .4;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    width: 20%;
+    transition: color 2s;
+}
+a:hover{
+    background-color: darkseagreen;
+}
+#submit{
+width: 30%;
+alignment: center;
+}

@@ -1,14 +1,14 @@
+
 <?php
 class Database{
     private $host = 'localhost';
     private $user = 'root';
     private $pass = 'root';
-    private $dbname = 'myBlog';
+    private $dbname = 'daisysBlog';
 
     private $dbh;
     private $error;
     private $stmt;
-
     public function __construct(){
         $dsn = 'mysql:host=' . $this->host . ';dbname='. $this->dbname;
         $options = array(
@@ -45,7 +45,6 @@ class Database{
                     break;
                 default:
                     $type = PDO::PARAM_STR;
-
             }
         }
         $this->stmt->bindValue($param, $value, $type);

@@ -1,3 +1,4 @@
+
 <head xmlns="http://www.w3.org/1999/html">
 
     <link rel="stylesheet" type="text/css" href="root/styleSheet.css">
@@ -13,14 +14,17 @@
 <?php
 
 require 'database.php';
+//require 'root/tags.php';
 
 $database = new Database;
 $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
 
+
 // $database->query('SELECT * FROM posts');
 // $rows = $database->resultset();
 //print_r($rows);
+
 
 if(@$_POST['delete']){
     $delete_id = $_POST['delete_id'];
@@ -57,6 +61,12 @@ if(@$post['submit']){
 $database->query('SELECT * FROM posts');
 $rows = $database->resultset();
 
+$database->query('SELECT * FROM posts');
+$rows = $database->resultset();
+
+//$Tags = new Tags();
+//$Tags->query('SELECT * FROM posts');
+//$rows = $Tags->resultset();
 ?>
 <body>
 
@@ -71,10 +81,8 @@ $rows = $database->resultset();
      <a href="index.php" style="color: white;transition: color 5s"> HOME </a> <a href="about.php" style="color: white"> ABOUT</a>
 </center>
     <br>
-
     </div>
-
-    </div>
+</div>
 
 
 <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
@@ -91,7 +99,7 @@ $rows = $database->resultset();
 
     <center>
     <div id="submit">
-     <input type="submit" name="submit" value="Submit" />
+     <input type="submit" name="Submit" value="Submit" />
 </div>
 
     </center>

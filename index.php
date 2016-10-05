@@ -64,9 +64,7 @@ $rows = $database->resultset();
 $database->query('SELECT * FROM posts');
 $rows = $database->resultset();
 
-//$Tags = new Tags();
-//$Tags->query('SELECT * FROM posts');
-//$rows = $Tags->resultset();
+
 ?>
 <body>
 
@@ -99,9 +97,8 @@ $rows = $database->resultset();
 
     <center>
     <div id="submit">
-     <input type="submit" name="Submit" value="Submit" />
+     <input type="submit" name="submit" value="Submit" />
 </div>
-
     </center>
 </form>
 
